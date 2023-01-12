@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weatherHere</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="frame">
+      <div class="main_frm">
+        <div class="w_frm">
+          <div class="w_curr">
+            <div class="w_loc">#{citiName}</div>
+            <div class="w_aqi">AQI #{aqi}</div>
+            <div class="w_info">
+              <div class="w_i_det">
+                <div class="w_temp">#{todayTemp}°C</div>
+                <div class="w_text">#{todayText}</div>
+              </div>
+              <div class="w_icon">
+                <img src="#{iconURL}" alt="icon"/>
+              </div>
+            </div>
+            <div class="w_forecast">
+              <div class="w_f_i">
+                <div>☁ Today: #{todayWeather[0]}</div>
+                <div>#{todayWeather[1]}°/#{todayWeather[2]}°</div>
+              </div>
+              <div class="w_f_i">
+                <div>☁ Tommorow: #{tommWeather[0]}</div>
+                <div>#{tommWeather[1]}°/#{tommWeather[2]}°</div>
+              </div>
+              <div class="w_f_i">
+                <div>☁ Saturday: #{nextWeather[0]}</div>
+                <div>#{nextWeather[1]}°/#{nextWeather[2]}°</div>
+              </div>
+            </div>
+          </div>
+          <div class="w_details">
+            <div class="w_d">
+              <div>
+                <div class="w_d_t">Real feel</div>
+                <div class="w_d_v">#{weatherDetail[0]}°C</div>
+              </div>
+              <div>
+                <div class="w_d_t">Max/Min</div>
+                <div class="w_d_v">#{weatherDetail[1]}°/#{weatherDetail[2]}°</div>
+              </div>
+            </div>
+            <div class="w_d">
+              <div>
+                <div class="w_d_t">Chance of rain</div>
+                <div class="w_d_v">#{weatherDetail[3]}&#37</div>
+              </div>
+              <div>
+                <div class="w_d_t">Humidity</div>
+                <div class="w_d_v">#{weatherDetail[4]}&#37</div>
+              </div>
+            </div>
+            <div class="w_d">
+              <div>
+                <div class="w_d_t">Windspeed</div>
+                <div class="w_d_v">#{weatherDetail[5]}</div>
+              </div>
+              <div>
+                <div class="w_d_t">Pressure</div>
+                <div class="w_d_v">#{weatherDetail[6]}mbar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

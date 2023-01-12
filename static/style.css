@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.w_loc{
+font-size: 1.7em;
+}
+.w_aqi{
+    font-size: 0.7em;
+    font-weight: bold;
+    background-color: #a2a2a2c7;
+    width: 5em;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 3px;
+}
+.w_frm{
+    width: 500px;
+    margin: 10px auto;
+    border-radius: 5px;
+    display: flex;
+    background-color: #898c8c;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.w_icon > img{
+    width: 100px;
+}
+.w_temp{
+    font-size: 4em;
+}
+.w_text{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.w_d_t{
+    font-size: 0.8em;
+    margin: 2px 0;
+}
+.w_curr{
+width: 90%;
+text-align: center;
+margin: 10px 0;
+border-radius: 10px; 
+}
+.w_info{
+    display: flex;
+    justify-content: space-between;
+}
+.w_details{
+    background-color: #a2a2a2c7;
+    width: 90%;   
+    box-sizing: border-box;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.w_i_det,w_{
+    margin: 0 15px;
+}
+
+.w_d{
+    display: flex;
+    margin: 15px 10px;
+    box-sizing: border-box;
+
+}
+.w_d > div{
+    width: 50%;
+}
+
+.w_forecast{
+    margin: 50px 0 0 0;
+}
+.w_f_i{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 10px 30px;
+    font-weight: 545;
+}
