@@ -4,6 +4,45 @@
     text-decoration: none;
 }
 
+.nav {
+    display: flex;
+    background-color: #898c8c;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    width: 490px;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.155);
+  }
+
+  #cityName::placeholder {
+    color: rgba(255, 255, 255, 0.725);
+  }
+
+  #cityName {
+    outline: none;
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    text-indent: 5px;
+    width: 250px;
+    background-color: #8080808f;
+    font: 1.2em;
+  }
+  #find_btn,
+  #cur_loc_btn {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px 0 0;
+    border: none;
+  }
+
 .w_loc{
 font-size: 1.7em;
 }
@@ -18,7 +57,7 @@ font-size: 1.7em;
 }
 .w_frm{
     width: 500px;
-    margin: 10px auto;
+    margin: 0 auto;
     border-radius: 5px;
     display: flex;
     background-color: #898c8c;
