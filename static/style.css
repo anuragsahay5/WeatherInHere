@@ -29,7 +29,7 @@
     height: 30px;
     border-radius: 15px;
     text-indent: 5px;
-    width: 50vw;
+    width: calc(50vw - 10px);
     background-color: #8080808f;
     font: 1.2em;
   }
