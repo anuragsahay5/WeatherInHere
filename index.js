@@ -45,10 +45,9 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/static/home.html");
 });
 
-app.post("/locGeo", (req, res) => {
-  let cityName = `${req.body.lat},${req.body.lon}`;
+app.get("/locGeo", (req, res) => {
+  let cityName = `${req.query.lat},${req.query.lon}`;
   let query_URL = `https://api.weatherapi.com/v1/forecast.json?key=${apiKEY}&q=${cityName}&days=3&aqi=yes&alerts=no`;
-  console.log(query_URL);
   let weatherParam;
   https.get(query_URL, (respond) => {
     if (respond.statusCode != 200) {
@@ -63,7 +62,14 @@ app.post("/locGeo", (req, res) => {
         let val = JSON.parse(weatherData);
         weatherParam = {
           citiName: val.location.name,
-          aqi: 138,
+          aqi: parseInt(
+            (val.current.air_quality.co +
+              val.current.air_quality.no2 +
+              val.current.air_quality.o3 +
+              val.current.air_quality.pm2_5 +
+              val.current.air_quality.pm10) /
+              5
+          ),
           todayTemp: val.current.temp_c.toFixed(0),
           todayText: val.current.condition.text,
           iconURL: "https:" + val.current.condition.icon,
@@ -100,10 +106,11 @@ app.post("/locGeo", (req, res) => {
   });
 });
 
-app.post("/locName", (req, res) => {
-  let cityName = req.body.cityName;
+app.get("/locName", (req, res) => {
+  let cityName = req.query.cityName;
   let query_URL = `https://api.weatherapi.com/v1/forecast.json?key=${apiKEY}&q=${cityName}&days=3&aqi=yes&alerts=no`;
   let weatherParam;
+  console.log(query_URL);
   https.get(query_URL, (respond) => {
     if (respond.statusCode != 200) {
       res.sendStatus(404);
@@ -117,7 +124,14 @@ app.post("/locName", (req, res) => {
         let val = JSON.parse(weatherData);
         weatherParam = {
           citiName: val.location.name,
-          aqi: 138,
+          aqi: parseInt(
+            (val.current.air_quality.co +
+              val.current.air_quality.no2 +
+              val.current.air_quality.o3 +
+              val.current.air_quality.pm2_5 +
+              val.current.air_quality.pm10) /
+              5
+          ),
           todayTemp: val.current.temp_c.toFixed(0),
           todayText: val.current.condition.text,
           iconURL: "https:" + val.current.condition.icon,

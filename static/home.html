@@ -11,13 +11,14 @@
   <body>
   
     <div class="w_frm">
+      <h1> <a href="/">WeatherInHere</a> </h1>
       <div class="nav">
-    <form action="/locGeo" method="post">
+    <form action="/locGeo" method="get">
       <input type="hidden" name="lon" id="lon" />
       <input type="hidden" name="lat" id="lat" />
       <button type="button" id="cur_loc_btn">Current Location</button>
     </form>
-    <form action="/locName" method="post">
+    <form action="/locName" method="get">
       <input type="text"placeholder="Enter location"name="cityName"id="cityName"/>
       <button type="submit" id="find_btn">Find</button>
     </form>

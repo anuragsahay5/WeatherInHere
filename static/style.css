@@ -3,7 +3,15 @@
     padding: 0;
     text-decoration: none;
 }
+a{
+    color: #f9f9f9d8;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308),-1px -1px 5px rgba(0, 0, 0, 0.308);
 
+}
+h1{
+    font-size: 1.5em;
+}
 .nav {
     display: flex;
     background-color: #898c8c;
@@ -28,7 +36,7 @@
     border: none;
     height: 30px;
     border-radius: 15px;
-    text-indent: 5px;
+    text-indent: 10px;
     width: 50vw;
     background-color: #8080808f;
     font: 1.2em;

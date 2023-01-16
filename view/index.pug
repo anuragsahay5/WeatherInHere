@@ -11,13 +11,14 @@
   <body>
   
     <div class="w_frm">
+      <h1> <a href="/">WeatherInHere</a> </h1>
       <div class="nav">
-    <form action="/locGeo" method="post">
+    <form action="/locGeo" method="get">
       <input type="hidden" name="lon" id="lon" />
       <input type="hidden" name="lat" id="lat" />
       <button type="button" id="cur_loc_btn">Current Location</button>
     </form>
-    <form action="/locName" method="post">
+    <form action="/locName" method="get">
       <input type="text"placeholder="Enter location"name="cityName"id="cityName"/>
       <button type="submit" id="find_btn">Find</button>
     </form>
@@ -36,15 +37,15 @@
         </div>
         <div class="w_forecast">
           <div class="w_f_i">
-            <div>☁ Today: #{todayWeather[0]}</div>
+            <div>☁ Today· #{todayWeather[0]}</div>
             <div>#{todayWeather[1]}°/#{todayWeather[2]}°</div>
           </div>
           <div class="w_f_i">
-            <div>☁ Tommorow: #{tommWeather[0]}</div>
+            <div>☁ Tommorow· #{tommWeather[0]}</div>
             <div>#{tommWeather[1]}°/#{tommWeather[2]}°</div>
           </div>
           <div class="w_f_i">
-            <div>☁ Saturday: #{nextWeather[0]}</div>
+            <div>☁ Saturday· #{nextWeather[0]}</div>
             <div>#{nextWeather[1]}°/#{nextWeather[2]}°</div>
           </div>
         </div>
