@@ -11,7 +11,7 @@
     border-top-right-radius: 5px;
     padding: 5px;
     align-items: center;
-    width:100vw;
+    width: calc(100vw - 10px);
     justify-content: center;
     margin: 0 auto;
     font-family: sans-serif;
@@ -29,7 +29,7 @@
     height: 30px;
     border-radius: 15px;
     text-indent: 5px;
-    width: calc(50vw - 10px);
+    width: 50vw;
     background-color: #8080808f;
     font: 1.2em;
   }
