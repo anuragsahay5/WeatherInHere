@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherInHere</title>
+
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <form action="/locGeo" method="post">
+        <input type="hidden" name="lon" id="lon" />
+        <input type="hidden" name="lat" id="lat" />
+        <button type="button" id="cur_loc_btn">Current Location</button>
+      </form>
+      <form action="/locName" method="post">
+        <input
+          type="text"
+          placeholder="Enter location"
+          name="cityName"
+          id="cityName"
+        />
+        <button type="submit" id="find_btn">Find</button>
+      </form>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>

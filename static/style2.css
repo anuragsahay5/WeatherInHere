@@ -1,0 +1,33 @@
+.nav {
+    display: flex;
+    background-color: black;
+    padding: 5px;
+    align-items: center;
+    width: 500px;
+    justify-content: center;
+    margin: auto;
+    font-family: sans-serif;
+  }
+
+  #cityName::placeholder {
+    color: rgba(255, 255, 255, 0.725);
+  }
+
+  #cityName {
+    outline: none;
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    text-indent: 5px;
+    width: 250px;
+    background-color: #8080808f;
+    font: 1.2em;
+  }
+  #find_btn,
+  #cur_loc_btn {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
