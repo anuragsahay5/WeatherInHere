@@ -1,2 +1,2 @@
-# [WeatherInHere]target=”_blank”(https://weatherinhere.cyclic.app/)
+# [WeatherInHere](https://weatherinhere.cyclic.app/)
 Real Time Weather Forecast Web App.
