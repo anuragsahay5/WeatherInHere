@@ -1,3 +1,3 @@
 # [WeatherInHere](https://weatherinhere.cyclic.app/)
 
-Real Time Weather Forecast Web App.
+A Real Time Weather Forecast Web App which provides quick and accurate information about weather condition.
