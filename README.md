@@ -1,7 +1,8 @@
 # WeatherInHere
 
 A Real Time Weather Forecast Web App which provides quick and accurate information about weather condition. </br>
-Want to Use · [Click Here](https://weatherinhere.cyclic.app/)
+
+Want to Use · [Click Here](https://weatherinhere.cyclic.app/) to goto deployed Website.
 
 ## Features
 - Search location or use live location.
