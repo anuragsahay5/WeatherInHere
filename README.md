@@ -11,4 +11,4 @@ A Real Time Weather Forecast Web App which provides quick and accurate informati
     - Get Weather Info for upto 3 days ahead.
 
 ## Usage
-Want to Use· [Click Here](https://weatherinhere.cyclic.app/).
+Want to Use· <a href="https://www.w3schools.com" target="_blank">Click here.</a>
