@@ -14,7 +14,7 @@ h1{
 }
 .nav {
     display: flex;
-    background-color: #898c8c;
+/*     background-color: #898c8c; */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 5px;
